@@ -19,6 +19,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi.staticfiles import StaticFiles
+app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
+
 model = YOLO("type_newest_ver.pt")
 NAMES = model.names if hasattr(model, "names") else ["Object"]
 
