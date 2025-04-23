@@ -1,0 +1,15 @@
+__pycache__/
+venv/
+.env
+.mypy_cache/
+.pytest_cache/
+.DS_Store
+*.pt  # ignore YOLO model weights
+
+# === Python general ===
+*.py[cod]
+*.log
+*.sqlite3
+*.db
+*.egg-info/
+*.pkl
