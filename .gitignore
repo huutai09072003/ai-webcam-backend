@@ -12,4 +12,22 @@ venv/
 *.sqlite3
 *.db
 *.egg-info/
-*.pkl
+*.pklPython general
+
+pycache/ *.py[cod] *.egg-info/ *.pkl *.log *.sqlite3 *.db
+
+Virtual environment
+
+venv/ .env
+
+Cache and temporary files
+
+.mypy_cache/ .pytest_cache/ .DS_Store
+
+YOLO model weights
+
+*.pt
+
+Logs and other generated files
+
+*.log
